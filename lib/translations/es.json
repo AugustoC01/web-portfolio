@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "about": "Sobre Mí",
+    "techStack": "Tecnologías",
+    "projects": "Proyectos",
+    "blog": "Blog",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "name": "Augusto Cannata",
+    "title": "Ingeniero Backend | Node.js & Desarrollo de APIs",
+    "tagline": "Ingeniero Backend enfocado en el diseño de APIs REST bien estructuradas y sistemas backend listos para producción utilizando Node.js, Express y entornos containerizados.",
+    "viewProjects": "Ver Proyectos",
+    "downloadCv": "Descargar CV",
+    "contact": "Contacto"
+  },
+  "about": {
+    "heading": "Sobre Mí",
+    "description": "Soy Ingeniero Backend especializado en el diseño e implementación de APIs REST utilizando Node.js y Express. Trabajo con una arquitectura por capas (routes, controllers, services) que me permite mantener una clara separación de responsabilidades y construir sistemas mantenibles en el tiempo.\n\nDesarrollé un sistema de facturación en producción utilizado por un comercio real, donde diseñé endpoints coherentes, implementé autenticación basada en cookies e integré Firestore como base de datos principal.\n\nAdemás, gestiono un entorno VPS propio utilizando Docker Compose y Traefik como reverse proxy con certificados HTTPS automáticos mediante Let's Encrypt. El proceso de deploy está automatizado a través de GitHub Actions, que se conecta vía SSH para ejecutar scripts remotos.\n\nMe enfoco en tomar decisiones de arquitectura sólidas, entender la infraestructura donde corre el sistema y construir backends preparados para entornos reales."
+  },
+  "techStack": {
+    "heading": "Tecnologías",
+    "categories": {
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "databases": "Bases de Datos",
+      "devops": "DevOps / Infraestructura",
+      "tools": "Herramientas"
+    }
+  },
+  "projects": {
+    "heading": "Proyectos",
+    "viewCode": "Código Fuente",
+    "liveDemo": "Demo"
+  },
+  "blog": {
+    "heading": "Blog",
+    "comingSoon": "Próximamente",
+    "description": "Próximamente voy a estar publicando artículos técnicos enfocados en diseño de APIs REST, decisiones de arquitectura backend, estrategias de deploy y aprendizajes obtenidos trabajando con sistemas en producción."
+  },
+  "contact": {
+    "heading": "Contacto",
+    "description": "Estoy abierto a oportunidades como Backend Engineer, colaboraciones técnicas o nuevos proyectos. Podés contactarme a través de cualquiera de los siguientes canales.",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  }
+}
