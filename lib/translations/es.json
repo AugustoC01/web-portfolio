@@ -16,7 +16,13 @@
   },
   "about": {
     "heading": "Sobre Mí",
-    "description": "Soy Ingeniero Backend especializado en el diseño e implementación de APIs REST utilizando Node.js y Express. Trabajo con una arquitectura por capas (routes, controllers, services) que me permite mantener una clara separación de responsabilidades y construir sistemas mantenibles en el tiempo.\n\nDesarrollé un sistema de facturación en producción utilizado por un comercio real, donde diseñé endpoints coherentes, implementé autenticación basada en cookies e integré Firestore como base de datos principal.\n\nAdemás, gestiono un entorno VPS propio utilizando Docker Compose y Traefik como reverse proxy con certificados HTTPS automáticos mediante Let's Encrypt. El proceso de deploy está automatizado a través de GitHub Actions, que se conecta vía SSH para ejecutar scripts remotos.\n\nMe enfoco en tomar decisiones de arquitectura sólidas, entender la infraestructura donde corre el sistema y construir backends preparados para entornos reales."
+    "description": [
+      "Soy Backend Engineer enfocado en la construcción de APIs REST listas para producción utilizando Node.js y Express.",
+      "Trabajo con una arquitectura por capas (routes → controllers → services) para garantizar una separación clara de responsabilidades y facilitar la mantenibilidad a largo plazo. Diseño APIs REST siguiendo convenciones estructuradas de recursos, flujos de autenticación y capas de persistencia de datos.",
+      "Desarrollé un sistema de facturación utilizado por un comercio real, implementando autenticación segura basada en cookies e integrando Firestore como base de datos principal.",
+      "A nivel infraestructura, gestiono un VPS propio utilizando Docker Compose y Traefik como reverse proxy con certificados HTTPS automáticos mediante Let's Encrypt. El proceso de deploy está automatizado con GitHub Actions, que se conecta vía SSH para ejecutar scripts remotos.",
+      "Mi enfoque está en construir sistemas backend mantenibles, con ownership de infraestructura y preparados para entornos reales."
+    ]
   },
   "techStack": {
     "heading": "Tecnologías",

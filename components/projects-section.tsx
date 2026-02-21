@@ -10,11 +10,7 @@ export function ProjectsSection() {
   const { ref, isVisible } = useScrollAnimation<HTMLElement>();
 
   return (
-    <section
-      id="projects"
-      ref={ref}
-      className="px-6 py-24"
-    >
+    <section id="projects" ref={ref} className="px-6 py-24">
       <div
         className={`mx-auto max-w-5xl transition-all duration-700 ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
@@ -27,12 +23,9 @@ export function ProjectsSection() {
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2">
           {projects.map((project, index) => {
-            const title =
-              locale === "es" ? project.titleEs : project.titleEn;
+            const title = locale === "es" ? project.titleEs : project.titleEn;
             const description =
-              locale === "es"
-                ? project.descriptionEs
-                : project.descriptionEn;
+              locale === "es" ? project.descriptionEs : project.descriptionEn;
 
             return (
               <article
@@ -57,30 +50,34 @@ export function ProjectsSection() {
                   ))}
                 </div>
 
-                <div className="mt-5 flex items-center gap-4 border-t border-border pt-4">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
-                    aria-label={`${t.projects.viewCode} - ${title}`}
-                  >
-                    <Github className="h-4 w-4" />
-                    {t.projects.viewCode}
-                  </a>
-                  {project.live && (
-                    <a
-                      href={project.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 text-sm text-primary transition-colors hover:text-primary/80"
-                      aria-label={`${t.projects.liveDemo} - ${title}`}
-                    >
-                      <ExternalLink className="h-4 w-4" />
-                      {t.projects.liveDemo}
-                    </a>
-                  )}
-                </div>
+                {(project.github || project.live) && (
+                  <div className="mt-5 flex items-center gap-4 border-t border-border pt-4">
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
+                        aria-label={`${t.projects.viewCode} - ${title}`}
+                      >
+                        <Github className="h-4 w-4" />
+                        {t.projects.viewCode}
+                      </a>
+                    )}
+                    {project.live && (
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 text-sm text-primary transition-colors hover:text-primary/80"
+                        aria-label={`${t.projects.liveDemo} - ${title}`}
+                      >
+                        <ExternalLink className="h-4 w-4" />
+                        {t.projects.liveDemo}
+                      </a>
+                    )}
+                  </div>
+                )}
               </article>
             );
           })}

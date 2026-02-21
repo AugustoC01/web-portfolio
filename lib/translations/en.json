@@ -16,7 +16,13 @@
   },
   "about": {
     "heading": "About Me",
-    "description": "I am a Backend Engineer specialized in designing and implementing structured REST APIs using Node.js and Express. I work with a layered architecture approach (routes, controllers, services) to ensure clear separation of concerns and long-term maintainability.\n\nI developed a production-ready billing system used by a real business, where I designed coherent API endpoints, implemented secure cookie-based authentication, and integrated Firestore for data persistence.\n\nI also manage a self-hosted VPS environment using Docker Compose and Traefik as a reverse proxy with automatic HTTPS certificates. The deployment process is automated through GitHub Actions, which connects via SSH to execute remote deployment scripts.\n\nI value solid architectural decisions, infrastructure awareness, and backend systems that are reliable, structured, and ready for real-world usage."
+    "description": [
+      "I am a Backend Engineer focused on building production-ready REST APIs using Node.js and Express.",
+      "My work follows a layered architecture (routes → controllers → services) to enforce clear separation of concerns and long-term maintainability. I design RESTful APIs with structured resource modeling, authentication flows, and persistent data layers.",
+      "I developed a billing system used by a real commercial business, implementing secure cookie-based authentication and Firestore for data persistence.",
+      "On the infrastructure side, I manage a self-hosted VPS environment using Docker Compose and Traefik as a reverse proxy with automatic HTTPS certificates via Let's Encrypt. Deployments are automated through GitHub Actions, which connects via SSH to execute remote deployment scripts.",
+      "My focus is on maintainable backend systems, infrastructure ownership, and real-world deployment practices."
+    ]
   },
   "techStack": {
     "heading": "Tech Stack",

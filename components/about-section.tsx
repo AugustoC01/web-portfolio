@@ -8,11 +8,7 @@ export function AboutSection() {
   const { ref, isVisible } = useScrollAnimation<HTMLElement>();
 
   return (
-    <section
-      id="about"
-      ref={ref}
-      className="px-6 py-24"
-    >
+    <section id="about" ref={ref} className="px-6 py-24">
       <div
         className={`mx-auto max-w-3xl transition-all duration-700 ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
@@ -22,9 +18,16 @@ export function AboutSection() {
           {t.about.heading}
         </h2>
         <div className="mt-2 h-1 w-12 rounded-full bg-primary" />
-        <p className="mt-8 text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
-          {t.about.description}
-        </p>
+        <div className="mt-8 space-y-4">
+          {t.about.description.map((paragraph, index) => (
+            <p
+              key={index}
+              className="text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg"
+            >
+              {paragraph}
+            </p>
+          ))}
+        </div>
       </div>
     </section>
   );

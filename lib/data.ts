@@ -75,14 +75,14 @@ export const projects: Project[] = [
     tech: [
       "Node.js",
       "Express",
-      "TypeScript",
+      "JavaScript",
       "Firestore",
       "Docker",
       "GitHub Actions",
       "Traefik",
     ],
     github: "https://github.com/AugustoC01/sistema-facturacion",
-    live: "https://sistema-facturacion-front-roan.vercel.app/",
+    live: "https://facturacion.augustoc.dev/",
   },
   {
     titleEn: "Self-Hosted Docker Infrastructure",
